@@ -1,0 +1,209 @@
+* {
+
+    box-sizing: border-box;
+}
+
+
+body {
+    text-align: center;
+    margin: 0;
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+
+}
+
+header {
+    background: rgb(248, 248, 248);
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+}
+
+h1 {
+    padding-top: 30px;
+    margin: 0%;
+    margin-bottom: 15px;
+}
+
+
+ul li
+  {
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    background: white;
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+ul,
+.main-nav {
+   padding: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.entry {
+    padding: 15px;
+    color: gray;
+}
+
+img {
+   max-width: 100%;
+}
+
+.portfolio {
+    padding: 15px;
+}
+
+footer {
+    background: rgb(248, 248, 248);
+    padding: 20px;
+}
+
+
+.footer-nav,
+.mobile  {
+    float: right;
+    text-transform: uppercase;
+    padding: 0;
+    margin-top: 0;
+    background: #F8F8F8;
+    font-weight: bold;
+  }
+  
+  .main-footer h3 {
+    float: left;
+    margin-top: 0;
+  }
+  
+  .footer-nav .large {
+    display: none;
+  }
+
+/* clear */
+
+.clear::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+ 
+
+/* media queries */
+
+@media (min-width: 768px) {
+
+    .main-nav li {
+        display: inline-block;
+        background-color: #fafafa;
+        margin-right: 16px;
+        padding: 10px;
+      }
+
+    .entry img {
+        float: right;
+        width: 40%;
+        margin-top: 20px;
+        padding: 0 10px;
+    }
+
+    .entryT {
+        float: left;
+        width: 60%;
+        text-align: left;
+    }
+
+    .portfolio-1, 
+    .portfolio-2 {
+        width: 47%;
+        float: left;
+        padding: 0 7px;
+    }
+
+    .portfolio-3,
+    .portfolio-4 {
+        width: 47%;
+        float: left;
+        padding: 0 7px;
+    }
+
+    .portfolio-5,
+    .portfolio-6 {
+        width: 47%;
+        float: left;
+        padding: 0 7px;
+    }
+
+    .portfolio {
+        max-width: 806px;
+        margin: 0 auto;
+    }
+
+       
+
+    .footer-nav .mobile {
+        display: none;
+      }
+    
+      .footer-nav .large {
+        display: inline-block;
+        padding: 0 16px;
+        font-size: 14px;
+      }
+
+      
+     
+     
+}
+
+@media (min-width: 1024px) {
+   .site-name {
+    float: left;
+    margin: 16px 0px 5px 40px;
+  }
+  .main-nav {
+    float: right;
+    width: auto;
+    margin-top: 20px;
+    margin-right: 14px;
+  }
+
+    .entryT {
+        text-align: left;
+        font-size: 1.3em;
+        line-height: 2em;
+    }
+
+    .portfolio-1, 
+    .portfolio-2,
+    .portfolio-3 {
+        width: 30%;
+        float: left;
+        margin-left: 30px;
+    }
+
+    .portfolio-4, 
+    .portfolio-5,
+    .portfolio-6 {
+        width: 30%;
+        float: left;
+        margin-left: 30px;
+    }
+
+    .portfolio {
+       
+        max-width: 1424px;
+
+    }
+   
+    
+   /*  Reference 
+    RamiAlsyed. (n.d.). Project-2--Responsive-Layout . Retrieved from git-hub: https://github.com/RamiAlsayed/Project-2--Responsive-Layout/commit/420ae957213f6f5eb3ba8bcc1e478cd5e431692c
+
+    vlaughlin. (n.d.). Treehouse-Project-2-Responsive-Layout . Retrieved from git-hub:https://github.com/vlaughlin/Treehouse-Project-2-Responsive-Layout */
+}
